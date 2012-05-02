@@ -19,7 +19,7 @@ public class GherkaParameters {
     private String outDir;
 
     public List<String> getFolders() {
-        return Lists.newArrayList(Splitter.on(" , ").split(folders));
+        return Lists.newArrayList(Splitter.on(",").split(folders));
     }
 
     public List<String> getSuffixes() {

@@ -14,15 +14,6 @@ public class Gherka {
 
         try {
             cmd.parse(args);
-//            List<String> list = new ArrayList<String>();
-//            list.add("/Users/kings/Desktop/autotestFraudAdapter/test-resources");
-//            list.add("/Users/kings/Desktop/Automation_Pack");
-//            list.add("/Users/kings/visa/cucumber-jvm-example/src/test/resources");
-//            List<String> suffixes = new ArrayList<String>();
-//            suffixes.add("**/*.txt");
-//            suffixes.add("**/*.story");
-//            suffixes.add("**/*.feature");
-//            BddHtmlBuilder builder = new BddHtmlBuilder(list, suffixes, ".");
             BddHtmlBuilder builder = new BddHtmlBuilder(params.getFolders(), params.getSuffixes(), params.getOutDir());
             builder.generateHtml();
         } catch (ParameterException ex) {
